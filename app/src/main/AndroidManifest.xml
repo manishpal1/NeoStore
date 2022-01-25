@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.neostorefinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/neostore_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/neostore_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NeoStoreFinal"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ProductDetailScreen"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ProductListing"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Register"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Home"
+            android:exported="true" />
+        <activity android:name=".activity.MyCartScreen"
+            android:exported="true"/>
+        <activity android:name=".activity.AddressListScreen"
+            android:exported="true"/>
+     <activity android:name=".storage.AddAddress"/>
+        <activity android:name=".activity.MyOrdersScreen"/>
+        <activity android:name=".activity.OrderActivtyScreen"/>
+        <activity android:name=".activity.MyAccount"/>
+
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+
+
+        </activity>
+    </application>
+
+</manifest>
